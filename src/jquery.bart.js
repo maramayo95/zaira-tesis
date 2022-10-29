@@ -1,3 +1,4 @@
+
 /**
  * BART - jQuery plugin for creating the a Ballon Analogue Risk Task
  *
@@ -112,7 +113,7 @@
     $.fn.bart = function( method ) {
             
         // default options
-        var opts = {
+        let opts = {
             balloon: {                       // default settings for a balloon
                 earnings:        0.05,       // potential earnings for each pump
                 popprob:         128,        // probability of popping (as 1 out of X)
@@ -418,6 +419,7 @@
             $('#' + opts.frmid).val(r);
         }
         
+        console.log(opts)
         
         /**
          * Return a random number to sort an array randomly
